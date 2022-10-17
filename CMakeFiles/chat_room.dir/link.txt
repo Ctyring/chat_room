@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-9/root/usr/bin/c++ -fPIC  -rdynamic -O0 -ggdb -std=c++11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined  -shared -Wl,-soname,libchat_room.so -o lib/libchat_room.so CMakeFiles/chat_room.dir/chat/my_module.cc.o   -L/apps/sylar/lib 

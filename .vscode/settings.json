@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.lua": "lua",
+        "memory": "cpp",
+        "iomanip": "cpp"
+    }
+}

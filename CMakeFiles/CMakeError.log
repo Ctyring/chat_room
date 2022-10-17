@@ -1,0 +1,122 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /root/cty/chat_room/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_e78d4/fast && /opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_e78d4.dir/build.make CMakeFiles/cmTC_e78d4.dir/build
+gmake[1]: 进入目录“/root/cty/chat_room/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e78d4.dir/src.c.o
+/opt/rh/devtoolset-9/root/usr/bin/cc   -rdynamic -O3 -fPIC -ggdb -std=c11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e78d4.dir/src.c.o   -c /root/cty/chat_room/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e78d4
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e78d4.dir/link.txt --verbose=1
+/opt/rh/devtoolset-9/root/usr/bin/cc  -rdynamic -O3 -fPIC -ggdb -std=c11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_e78d4.dir/src.c.o  -o cmTC_e78d4 
+/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/9/ld: CMakeFiles/cmTC_e78d4.dir/src.c.o: in function `main':
+/root/cty/chat_room/CMakeFiles/CMakeTmp/src.c:11: undefined reference to `pthread_create'
+/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/9/ld: /root/cty/chat_room/CMakeFiles/CMakeTmp/src.c:12: undefined reference to `pthread_detach'
+/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/9/ld: /root/cty/chat_room/CMakeFiles/CMakeTmp/src.c:13: undefined reference to `pthread_join'
+/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/9/ld: /root/cty/chat_room/CMakeFiles/CMakeTmp/src.c:14: undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_e78d4.dir/build.make:90：cmTC_e78d4] 错误 1
+gmake[1]: 离开目录“/root/cty/chat_room/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:124：cmTC_e78d4/fast] 错误 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /root/cty/chat_room/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_73759/fast && /opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_73759.dir/build.make CMakeFiles/cmTC_73759.dir/build
+gmake[1]: 进入目录“/root/cty/chat_room/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_73759.dir/CheckFunctionExists.c.o
+/opt/rh/devtoolset-9/root/usr/bin/cc   -rdynamic -O3 -fPIC -ggdb -std=c11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_73759.dir/CheckFunctionExists.c.o   -c /usr/local/cmake/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_73759
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73759.dir/link.txt --verbose=1
+/opt/rh/devtoolset-9/root/usr/bin/cc  -rdynamic -O3 -fPIC -ggdb -std=c11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_73759.dir/CheckFunctionExists.c.o  -o cmTC_73759  -lpthreads 
+/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/9/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_73759.dir/build.make:90：cmTC_73759] 错误 1
+gmake[1]: 离开目录“/root/cty/chat_room/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:124：cmTC_73759/fast] 错误 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /root/cty/chat_room/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_8635f/fast && gmake[1]: 进入目录“/root/cty/chat_room/CMakeFiles/CMakeTmp”
+/opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_8635f.dir/build.make CMakeFiles/cmTC_8635f.dir/build
+gmake[2]: 进入目录“/root/cty/chat_room/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8635f.dir/src.c.o
+/opt/rh/devtoolset-9/root/usr/bin/cc   -rdynamic -O3 -fPIC -ggdb -std=c11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_8635f.dir/src.c.o   -c /root/cty/chat_room/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8635f
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8635f.dir/link.txt --verbose=1
+/opt/rh/devtoolset-9/root/usr/bin/cc  -rdynamic -O3 -fPIC -ggdb -std=c11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_8635f.dir/src.c.o  -o cmTC_8635f 
+/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/9/ld: CMakeFiles/cmTC_8635f.dir/src.c.o: in function `main':
+/root/cty/chat_room/CMakeFiles/CMakeTmp/src.c:11: undefined reference to `pthread_create'
+/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/9/ld: /root/cty/chat_room/CMakeFiles/CMakeTmp/src.c:12: undefined reference to `pthread_detach'
+/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/9/ld: /root/cty/chat_room/CMakeFiles/CMakeTmp/src.c:13: undefined reference to `pthread_join'
+/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/9/ld: /root/cty/chat_room/CMakeFiles/CMakeTmp/src.c:14: undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/cmTC_8635f.dir/build.make:90：cmTC_8635f] 错误 1
+gmake[2]: 离开目录“/root/cty/chat_room/CMakeFiles/CMakeTmp”
+gmake[1]: *** [Makefile:124：cmTC_8635f/fast] 错误 2
+gmake[1]: 离开目录“/root/cty/chat_room/CMakeFiles/CMakeTmp”
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /root/cty/chat_room/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/rh/devtoolset-8/root/usr/bin/gmake cmTC_5d2b6/fast && gmake[1]: 进入目录“/root/cty/chat_room/CMakeFiles/CMakeTmp”
+/opt/rh/devtoolset-8/root/usr/bin/gmake  -f CMakeFiles/cmTC_5d2b6.dir/build.make CMakeFiles/cmTC_5d2b6.dir/build
+gmake[2]: 进入目录“/root/cty/chat_room/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_5d2b6.dir/CheckFunctionExists.c.o
+/opt/rh/devtoolset-9/root/usr/bin/cc   -rdynamic -O3 -fPIC -ggdb -std=c11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_5d2b6.dir/CheckFunctionExists.c.o   -c /usr/local/cmake/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5d2b6
+/usr/local/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d2b6.dir/link.txt --verbose=1
+/opt/rh/devtoolset-9/root/usr/bin/cc  -rdynamic -O3 -fPIC -ggdb -std=c11 -Wall -Wno-deprecated -Werror -Wno-unused-function -Wno-builtin-macro-redefined -Wno-deprecated-declarations -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_5d2b6.dir/CheckFunctionExists.c.o  -o cmTC_5d2b6  -lpthreads 
+/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/9/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/cmTC_5d2b6.dir/build.make:90：cmTC_5d2b6] 错误 1
+gmake[2]: 离开目录“/root/cty/chat_room/CMakeFiles/CMakeTmp”
+gmake[1]: *** [Makefile:124：cmTC_5d2b6/fast] 错误 2
+gmake[1]: 离开目录“/root/cty/chat_room/CMakeFiles/CMakeTmp”
+
+
+
