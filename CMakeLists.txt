@@ -33,6 +33,9 @@ endif()
 
 set(LIB_SRC
         chat/my_module.cc
+        chat/protocol.cc
+        chat/resource_servlet.cc
+        chat/chat_servlet.cc
     )
 
 #PROTOBUF_GENERATE_CPP(PB_SRCS PB_HDRS sylar/test.proto)

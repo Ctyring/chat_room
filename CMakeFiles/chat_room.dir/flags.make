@@ -10,3 +10,9 @@ CXX_INCLUDES = -I/root/cty/chat_room/. -I/apps/sylar/include -I/root/cty/chat_ro
 
 # Custom defines: CMakeFiles/chat_room.dir/chat/my_module.cc.o_DEFINES = __FILE__="chat/my_module.cc"
 
+# Custom defines: CMakeFiles/chat_room.dir/chat/protocol.cc.o_DEFINES = __FILE__="chat/protocol.cc"
+
+# Custom defines: CMakeFiles/chat_room.dir/chat/resource_servlet.cc.o_DEFINES = __FILE__="chat/resource_servlet.cc"
+
+# Custom defines: CMakeFiles/chat_room.dir/chat/chat_servlet.cc.o_DEFINES = __FILE__="chat/chat_servlet.cc"
+

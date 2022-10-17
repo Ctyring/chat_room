@@ -76,17 +76,62 @@ CMakeFiles/chat_room.dir/chat/my_module.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chat_room.dir/chat/my_module.cc.s"
 	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"chat/my_module.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/cty/chat_room/chat/my_module.cc -o CMakeFiles/chat_room.dir/chat/my_module.cc.s
 
+CMakeFiles/chat_room.dir/chat/protocol.cc.o: CMakeFiles/chat_room.dir/flags.make
+CMakeFiles/chat_room.dir/chat/protocol.cc.o: chat/protocol.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cty/chat_room/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/chat_room.dir/chat/protocol.cc.o"
+	/opt/rh/devtoolset-9/root/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"chat/protocol.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chat_room.dir/chat/protocol.cc.o -c /root/cty/chat_room/chat/protocol.cc
+
+CMakeFiles/chat_room.dir/chat/protocol.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chat_room.dir/chat/protocol.cc.i"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"chat/protocol.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/cty/chat_room/chat/protocol.cc > CMakeFiles/chat_room.dir/chat/protocol.cc.i
+
+CMakeFiles/chat_room.dir/chat/protocol.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chat_room.dir/chat/protocol.cc.s"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"chat/protocol.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/cty/chat_room/chat/protocol.cc -o CMakeFiles/chat_room.dir/chat/protocol.cc.s
+
+CMakeFiles/chat_room.dir/chat/resource_servlet.cc.o: CMakeFiles/chat_room.dir/flags.make
+CMakeFiles/chat_room.dir/chat/resource_servlet.cc.o: chat/resource_servlet.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cty/chat_room/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/chat_room.dir/chat/resource_servlet.cc.o"
+	/opt/rh/devtoolset-9/root/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"chat/resource_servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chat_room.dir/chat/resource_servlet.cc.o -c /root/cty/chat_room/chat/resource_servlet.cc
+
+CMakeFiles/chat_room.dir/chat/resource_servlet.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chat_room.dir/chat/resource_servlet.cc.i"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"chat/resource_servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/cty/chat_room/chat/resource_servlet.cc > CMakeFiles/chat_room.dir/chat/resource_servlet.cc.i
+
+CMakeFiles/chat_room.dir/chat/resource_servlet.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chat_room.dir/chat/resource_servlet.cc.s"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"chat/resource_servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/cty/chat_room/chat/resource_servlet.cc -o CMakeFiles/chat_room.dir/chat/resource_servlet.cc.s
+
+CMakeFiles/chat_room.dir/chat/chat_servlet.cc.o: CMakeFiles/chat_room.dir/flags.make
+CMakeFiles/chat_room.dir/chat/chat_servlet.cc.o: chat/chat_servlet.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/cty/chat_room/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/chat_room.dir/chat/chat_servlet.cc.o"
+	/opt/rh/devtoolset-9/root/usr/bin/c++  $(CXX_DEFINES) -D__FILE__=\"chat/chat_servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chat_room.dir/chat/chat_servlet.cc.o -c /root/cty/chat_room/chat/chat_servlet.cc
+
+CMakeFiles/chat_room.dir/chat/chat_servlet.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chat_room.dir/chat/chat_servlet.cc.i"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"chat/chat_servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/cty/chat_room/chat/chat_servlet.cc > CMakeFiles/chat_room.dir/chat/chat_servlet.cc.i
+
+CMakeFiles/chat_room.dir/chat/chat_servlet.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chat_room.dir/chat/chat_servlet.cc.s"
+	/opt/rh/devtoolset-9/root/usr/bin/c++ $(CXX_DEFINES) -D__FILE__=\"chat/chat_servlet.cc\" $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/cty/chat_room/chat/chat_servlet.cc -o CMakeFiles/chat_room.dir/chat/chat_servlet.cc.s
+
 # Object files for target chat_room
 chat_room_OBJECTS = \
-"CMakeFiles/chat_room.dir/chat/my_module.cc.o"
+"CMakeFiles/chat_room.dir/chat/my_module.cc.o" \
+"CMakeFiles/chat_room.dir/chat/protocol.cc.o" \
+"CMakeFiles/chat_room.dir/chat/resource_servlet.cc.o" \
+"CMakeFiles/chat_room.dir/chat/chat_servlet.cc.o"
 
 # External object files for target chat_room
 chat_room_EXTERNAL_OBJECTS =
 
 lib/libchat_room.so: CMakeFiles/chat_room.dir/chat/my_module.cc.o
+lib/libchat_room.so: CMakeFiles/chat_room.dir/chat/protocol.cc.o
+lib/libchat_room.so: CMakeFiles/chat_room.dir/chat/resource_servlet.cc.o
+lib/libchat_room.so: CMakeFiles/chat_room.dir/chat/chat_servlet.cc.o
 lib/libchat_room.so: CMakeFiles/chat_room.dir/build.make
 lib/libchat_room.so: CMakeFiles/chat_room.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/cty/chat_room/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library lib/libchat_room.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/cty/chat_room/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library lib/libchat_room.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/chat_room.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
